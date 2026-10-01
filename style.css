@@ -1,0 +1,807 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: #fffaf5;
+    color: #2d211b;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    min-height: 650px;
+
+    position: relative;
+
+    overflow: hidden;
+
+    background:
+        radial-gradient(
+            circle at 85% 20%,
+            rgba(255, 205, 120, 0.35),
+            transparent 25%
+        ),
+        linear-gradient(
+            135deg,
+            #fff1dc,
+            #fffaf5,
+            #ffe8c4
+        );
+}
+
+
+/* NAVBAR */
+
+.navbar {
+
+    width: 90%;
+    max-width: 1120px;
+
+    margin: auto;
+
+    padding: 25px 0;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+
+.logo {
+
+    font-size: 1.2rem;
+
+    font-weight: 800;
+}
+
+
+.nav-button {
+
+    text-decoration: none;
+
+    color: white;
+
+    background: #e85d04;
+
+    padding: 11px 20px;
+
+    border-radius: 50px;
+
+    font-weight: 600;
+
+    transition: 0.3s;
+}
+
+
+.nav-button:hover {
+
+    background: #c94d00;
+
+    transform: translateY(-3px);
+}
+
+
+/* HERO CONTENT */
+
+.hero-content {
+
+    width: 90%;
+    max-width: 1120px;
+
+    margin: 90px auto 0;
+}
+
+
+.tag {
+
+    color: #e85d04;
+
+    font-weight: 800;
+
+    font-size: 0.78rem;
+
+    letter-spacing: 2px;
+}
+
+
+.hero h1 {
+
+    font-size: clamp(
+        2.5rem,
+        6vw,
+        5rem
+    );
+
+    line-height: 1.05;
+
+    max-width: 800px;
+
+    margin: 15px 0;
+}
+
+
+.hero h1 span {
+
+    display: block;
+
+    color: #e85d04;
+}
+
+
+.hero-content p {
+
+    color: #705f55;
+
+    max-width: 600px;
+
+    margin-bottom: 30px;
+}
+
+
+/* BOTÃO */
+
+.main-button {
+
+    display: inline-block;
+
+    text-decoration: none;
+
+    border: none;
+
+    cursor: pointer;
+
+    background: #e85d04;
+
+    color: white;
+
+    padding: 14px 24px;
+
+    border-radius: 50px;
+
+    font-weight: 700;
+
+    transition: 0.3s;
+
+    box-shadow:
+        0 10px 25px
+        rgba(232, 93, 4, 0.2);
+}
+
+
+.main-button:hover {
+
+    transform: translateY(-3px);
+
+    background: #c94d00;
+}
+
+
+/* COMIDAS FLUTUANTES */
+
+.floating-food {
+
+    position: absolute;
+
+    font-size: 6rem;
+
+    filter:
+        drop-shadow(
+            0 15px 15px
+            rgba(70, 40, 20, 0.15)
+        );
+
+    animation: floating 4s ease-in-out infinite;
+}
+
+
+.food1 {
+
+    right: 12%;
+
+    top: 20%;
+}
+
+
+.food2 {
+
+    right: 27%;
+
+    bottom: 14%;
+
+    font-size: 4rem;
+
+    animation-delay: 0.7s;
+}
+
+
+.food3 {
+
+    right: 5%;
+
+    bottom: 20%;
+
+    font-size: 3.5rem;
+
+    animation-delay: 1.2s;
+}
+
+
+@keyframes floating {
+
+    0%,
+    100% {
+
+        transform:
+            translateY(0)
+            rotate(8deg);
+    }
+
+    50% {
+
+        transform:
+            translateY(-15px)
+            rotate(-4deg);
+    }
+}
+
+
+/* =========================
+   CARDÁPIO
+========================= */
+
+.menu {
+
+    width: 90%;
+
+    max-width: 1120px;
+
+    margin: auto;
+
+    padding: 100px 0;
+}
+
+
+.section-title {
+
+    text-align: center;
+
+    margin-bottom: 50px;
+}
+
+
+.section-title span {
+
+    color: #e85d04;
+
+    font-size: 0.8rem;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+}
+
+
+.section-title h2 {
+
+    font-size: 3rem;
+
+    margin: 8px 0;
+}
+
+
+.section-title p {
+
+    color: #806f64;
+}
+
+
+/* CARDS */
+
+.cards {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 22px;
+}
+
+
+.food-card {
+
+    background: white;
+
+    border: 1px solid #f0e2d5;
+
+    border-radius: 24px;
+
+    padding: 28px;
+
+    min-height: 285px;
+
+    cursor: pointer;
+
+    position: relative;
+
+    overflow: hidden;
+
+    transition: 0.35s;
+
+    box-shadow:
+        0 8px 30px
+        rgba(70, 40, 20, 0.05);
+}
+
+
+.food-card:hover {
+
+    transform:
+        translateY(-10px)
+        scale(1.02);
+
+    border-color: #f4a261;
+
+    box-shadow:
+        0 20px 40px
+        rgba(70, 40, 20, 0.12);
+}
+
+
+.food-icon {
+
+    font-size: 3.5rem;
+
+    margin-bottom: 20px;
+
+    transition: 0.35s;
+}
+
+
+.food-card:hover .food-icon {
+
+    transform:
+        scale(1.2)
+        rotate(-7deg);
+}
+
+
+.category {
+
+    font-size: 0.68rem;
+
+    font-weight: 800;
+
+    letter-spacing: 1.5px;
+
+    color: #e85d04;
+}
+
+
+.food-card h3 {
+
+    font-size: 1.3rem;
+
+    margin: 7px 0;
+}
+
+
+.food-card p {
+
+    color: #796960;
+
+    font-size: 0.9rem;
+
+    line-height: 1.6;
+}
+
+
+.card-bottom {
+
+    position: absolute;
+
+    bottom: 24px;
+
+    left: 28px;
+
+    right: 28px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    color: #e85d04;
+}
+
+
+.card-bottom span {
+
+    font-size: 1.4rem;
+
+    transition: 0.3s;
+}
+
+
+.food-card:hover .card-bottom span {
+
+    transform:
+        translateX(7px);
+}
+
+
+/* =========================
+   CTA
+========================= */
+
+.cta {
+
+    padding: 65px 8%;
+
+    background: #2d211b;
+
+    color: white;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 30px;
+}
+
+
+.cta span {
+
+    color: #ff9f43;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+}
+
+
+.cta h2 {
+
+    font-size: 2.5rem;
+
+    margin: 5px 0;
+}
+
+
+.cta p {
+
+    color: #d6c6bb;
+}
+
+
+.whatsapp-button {
+
+    text-decoration: none;
+
+    background: #25d366;
+
+    color: white;
+
+    padding: 15px 25px;
+
+    border-radius: 50px;
+
+    font-weight: 700;
+
+    white-space: nowrap;
+
+    transition: 0.3s;
+}
+
+
+.whatsapp-button:hover {
+
+    transform: scale(1.05);
+
+    background: #1ebc59;
+}
+
+
+/* FOOTER */
+
+footer {
+
+    background: #211812;
+
+    color: #aa9a90;
+
+    text-align: center;
+
+    padding: 25px;
+}
+
+
+/* =========================
+   MODAL
+========================= */
+
+.modal-overlay {
+
+    position: fixed;
+
+    inset: 0;
+
+    background:
+        rgba(25, 16, 11, 0.7);
+
+    backdrop-filter: blur(7px);
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 20px;
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    transition: 0.3s;
+
+    z-index: 100;
+}
+
+
+.modal-overlay.active {
+
+    opacity: 1;
+
+    visibility: visible;
+}
+
+
+.modal {
+
+    width: min(
+        540px,
+        100%
+    );
+
+    background: #fffaf5;
+
+    border-radius: 28px;
+
+    padding: 35px;
+
+    position: relative;
+
+    transform:
+        translateY(40px)
+        scale(0.9);
+
+    transition: 0.35s;
+}
+
+
+.modal-overlay.active .modal {
+
+    transform:
+        translateY(0)
+        scale(1);
+}
+
+
+/* BOTÃO FECHAR */
+
+.close {
+
+    position: absolute;
+
+    right: 18px;
+
+    top: 14px;
+
+    width: 38px;
+
+    height: 38px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: #f6e8dc;
+
+    font-size: 1.5rem;
+
+    cursor: pointer;
+}
+
+
+.close:hover {
+
+    background: #ffd7bd;
+
+    transform: rotate(90deg);
+}
+
+
+/* MODAL ICON */
+
+.modal-icon {
+
+    font-size: 5rem;
+
+    margin-bottom: 10px;
+
+    animation: popup 0.5s ease;
+}
+
+
+@keyframes popup {
+
+    from {
+
+        transform:
+            scale(0.3)
+            rotate(-20deg);
+
+        opacity: 0;
+    }
+
+    to {
+
+        transform:
+            scale(1)
+            rotate(0);
+
+        opacity: 1;
+    }
+}
+
+
+.modal h2 {
+
+    font-size: 2rem;
+
+    margin: 5px 0 10px;
+}
+
+
+.modal > p {
+
+    color: #75645b;
+
+    line-height: 1.7;
+}
+
+
+/* INGREDIENTES */
+
+.info-box {
+
+    margin: 25px 0;
+
+    padding: 18px;
+
+    border-radius: 18px;
+
+    background: #fff0df;
+}
+
+
+.info-box h4 {
+
+    margin-bottom: 5px;
+}
+
+
+.info-box p {
+
+    color: #705f55;
+
+    font-size: 0.9rem;
+
+    line-height: 1.6;
+}
+
+
+/* RODAPÉ DO MODAL */
+
+.modal-footer {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 15px;
+}
+
+
+.modal-footer strong {
+
+    color: #e85d04;
+}
+
+
+/* =========================
+   RESPONSIVO
+========================= */
+
+@media (max-width: 850px) {
+
+    .cards {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+
+    .floating-food {
+
+        opacity: 0.4;
+    }
+
+
+    .cta {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+}
+
+
+@media (max-width: 580px) {
+
+    .nav-button {
+
+        display: none;
+    }
+
+
+    .hero-content {
+
+        margin-top: 70px;
+    }
+
+
+    .cards {
+
+        grid-template-columns: 1fr;
+    }
+
+
+    .section-title h2 {
+
+        font-size: 2rem;
+    }
+
+
+    .modal-footer {
+
+        flex-direction: column;
+
+        align-items: stretch;
+    }
+
+
+    .modal-footer .main-button {
+
+        text-align: center;
+    }
+}

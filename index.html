@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Delícias da Casa</title>
+<link rel="stylesheet" href="style.css">
+
+    <!-- Fonte -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- CABEÇALHO -->
+    <header class="hero">
+
+        <nav class="navbar">
+
+            <div class="logo">
+                🥟 Delícias da Casa
+            </div>
+
+            <a href="#cardapio" class="nav-button">
+                Ver cardápio
+            </a>
+
+        </nav>
+
+
+        <div class="hero-content">
+
+            <span class="tag">
+                FEITO COM CARINHO ❤️
+            </span>
+
+            <h1>
+                Salgados deliciosos
+                <span>para qualquer momento.</span>
+            </h1>
+
+            <p>
+                Escolha seu salgado favorito e clique nele
+                para conhecer todos os detalhes.
+            </p>
+
+            <a href="#cardapio" class="main-button">
+                Ver cardápio ↓
+            </a>
+
+        </div>
+
+        <!-- Emojis decorativos -->
+
+        <div class="floating-food food1">
+            🥐
+        </div>
+
+        <div class="floating-food food2">
+            🥟
+        </div>
+
+        <div class="floating-food food3">
+            🍫
+        </div>
+
+    </header>
+
+
+    <!-- CARDÁPIO -->
+
+    <main id="cardapio">
+
+        <section class="menu">
+
+            <div class="section-title">
+
+                <span>
+                    ✨ NOSSO CARDÁPIO
+                </span>
+
+                <h2>
+                    Escolha o seu favorito
+                </h2>
+
+                <p>
+                    Clique em uma opção para ver mais informações.
+                </p>
+
+            </div>
+
+
+            <div class="cards">
+
+
+                <!-- ESFIRRA -->
+
+                <article class="food-card" data-food="esfirra">
+
+                    <div class="food-icon">
+                        🥙
+                    </div>
+
+                    <span class="category">
+                        SALGADO
+                    </span>
+
+                    <h3>
+                        Esfiha
+                    </h3>
+
+                    <p>
+                        Massa macia com recheio saboroso.
+                    </p>
+
+                    <div class="card-bottom">
+
+                        <strong>
+                            Ver detalhes
+                        </strong>
+
+                        <span>
+                            →
+                        </span>
+
+                    </div>
+
+                </article>
+
+
+                <!-- COXINHA -->
+
+                <article class="food-card" data-food="coxinha">
+
+                    <div class="food-icon">
+                        🍗
+                    </div>
+
+                    <span class="category">
+                        SALGADO
+                    </span>
+
+                    <h3>
+                        Coxinha
+                    </h3>
+
+                    <p>
+                        Massa douradinha com recheio de frango.
+                    </p>
+
+                    <div class="card-bottom">
+
+                        <strong>
+                            Ver detalhes
+                        </strong>
+
+                        <span>
+                            →
+                        </span>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PÃO -->
+
+                <article class="food-card" data-food="pao">
+
+                    <div class="food-icon">
+                        🥪
+                    </div>
+
+                    <span class="category">
+                        LANCHE
+                    </span>
+
+                    <h3>
+                        Pão com Presunto e Queijo
+                    </h3>
+
+                    <p>
+                        Uma combinação clássica e deliciosa.
+                    </p>
+
+                    <div class="card-bottom">
+
+                        <strong>
+                            Ver detalhes
+                        </strong>
+
+                        <span>
+                            →
+                        </span>
+
+                    </div>
+
+                </article>
+
+
+                <!-- CROISSANT CHOCOLATE -->
+
+                <article
+                    class="food-card"
+                    data-food="chocolate"
+                >
+
+                    <div class="food-icon">
+                        🥐
+                    </div>
+
+                    <span class="category">
+                        CROSSANT
+                    </span>
+
+                    <h3>
+                        Crossant de Chocolate
+                    </h3>
+
+                    <p>
+                        Massa crocante com delicioso chocolate.
+                    </p>
+
+                    <div class="card-bottom">
+
+                        <strong>
+                            Ver detalhes
+                        </strong>
+
+                        <span>
+                            →
+                        </span>
+
+                    </div>
+
+                </article>
+
+
+                <!-- CROISSANT FRANGO -->
+
+                <article
+                    class="food-card"
+                    data-food="frango"
+                >
+
+                    <div class="food-icon">
+                        🥐
+                    </div>
+
+                    <span class="category">
+                        CROSSANT
+                    </span>
+
+                    <h3>
+                        Crossant de Frango
+                    </h3>
+
+                    <p>
+                        Crossant crocante com recheio de frango.
+                    </p>
+
+                    <div class="card-bottom">
+
+                        <strong>
+                            Ver detalhes
+                        </strong>
+
+                        <span>
+                            →
+                        </span>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- SEÇÃO DE PEDIDO -->
+
+    <section class="cta">
+
+        <div>
+
+            <span>
+                😋 BATEU A FOME?
+            </span>
+
+            <h2>
+                Faça seu pedido!
+            </h2>
+
+            <p>
+                Escolha seus salgados favoritos e faça seu pedido.
+            </p>
+
+        </div>
+
+        <a
+            href="https://wa.me/5500000000000"
+            target="_blank"
+            class="whatsapp-button"
+        >
+            Pedir pelo WhatsApp
+        </a>
+
+    </section>
+
+
+    <!-- RODAPÉ -->
+
+    <footer>
+
+        <p>
+            © 2026 Delícias da Casa ❤️
+        </p>
+
+    </footer>
+
+
+    <!-- MODAL -->
+
+    <div class="modal-overlay" id="modal">
+
+        <div class="modal">
+
+            <button
+                class="close"
+                id="closeModal"
+            >
+                ×
+            </button>
+
+
+            <div
+                class="modal-icon"
+                id="modalIcon"
+            >
+                🥟
+            </div>
+
+
+            <span
+                class="category"
+                id="modalCategory"
+            >
+                SALGADO
+            </span>
+
+
+            <h2 id="modalTitle">
+                Produto
+            </h2>
+
+
+            <p id="modalDescription">
+                Descrição
+            </p>
+
+
+            <div class="info-box">
+
+                <h4>
+                    Ingredientes
+                </h4>
+
+                <p id="modalIngredients">
+                    Ingredientes
+                </p>
+
+            </div>
+
+
+            <div class="modal-footer">
+
+                <strong id="modalPrice">
+                    Consulte o preço
+                </strong>
+
+                <a
+                    id="modalOrder"
+                    href="#"
+                    target="_blank"
+                    class="main-button"
+                >
+                    Quero pedir!
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
